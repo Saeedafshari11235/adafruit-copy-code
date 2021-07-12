@@ -18,8 +18,13 @@
  //my notes 001
  //it's just a copy from adafruit for researches
  //the main job of this code is making a connection between  nodemcu and adafruit using mqtt
+ //--------------------------------------------
+ //my notes 002
+ //add esp8266 library because nodemcu uses esp8266
 #include <ESP8266WiFi.h>
+ //add addafruit library.I think it's for making it ready for mqtt
 #include "Adafruit_MQTT.h"
+//as i explain at top
 #include "Adafruit_MQTT_Client.h"
 
 /************************* WiFi Access Point *********************************/
