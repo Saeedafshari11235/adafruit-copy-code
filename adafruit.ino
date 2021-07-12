@@ -46,7 +46,8 @@
 #define AIO_KEY         "...your AIO key..."
 
 /************ Global State (you don't need to change this!) ******************/
-
+//my notes 005
+//well it doesn't need any more comment ;)
 // Create an ESP8266 WiFiClient class to connect to the MQTT server.
 WiFiClient client;
 // or... use WiFiFlientSecure for SSL
@@ -56,11 +57,13 @@ WiFiClient client;
 Adafruit_MQTT_Client mqtt(&client, AIO_SERVER, AIO_SERVERPORT, AIO_USERNAME, AIO_KEY);
 
 /****************************** Feeds ***************************************/
-
+//my note 006
+//do whatever is written down here!   just do it!   I'm serious!
 // Setup a feed called 'potValue' for publishing.
-// Notice MQTT paths for AIO follow the form: <username>/feeds/<feedname>
+//the feed must be made in your dashboard     just do it!
+// Notice MQTT paths for AIO follow the form: <username>/feeds/<feedname>     read this line again! it is important!!!!
 Adafruit_MQTT_Publish potValue = Adafruit_MQTT_Publish(&mqtt, AIO_USERNAME "/feeds/potValue");
-
+//################just do it!#################
 // Setup a feed called 'ledBrightness' for subscribing to changes.
 Adafruit_MQTT_Subscribe ledBrightness = Adafruit_MQTT_Subscribe(&mqtt, AIO_USERNAME "/feeds/ledBrightness");
 
