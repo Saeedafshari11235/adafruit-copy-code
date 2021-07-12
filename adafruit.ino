@@ -66,21 +66,33 @@ Adafruit_MQTT_Publish potValue = Adafruit_MQTT_Publish(&mqtt, AIO_USERNAME "/fee
 //################just do it!#################
 // Setup a feed called 'ledBrightness' for subscribing to changes.
 Adafruit_MQTT_Subscribe ledBrightness = Adafruit_MQTT_Subscribe(&mqtt, AIO_USERNAME "/feeds/ledBrightness");
-
+//$$$$$$$$$$$$$$$$$$!!!JUST_DO_IT!!!$$$$$$$$$$$$$$$$$$$$$$$
 /*************************** Sketch Code ************************************/
 
 // Bug workaround for Arduino 1.6.6, it seems to need a function declaration
 // for some reason (only affects ESP8266, likely an arduino-builder bug).
+//my note 007
+//it seems like this command is for making a function (تابع)
 void MQTT_connect();
-
+//i have no comments about what is it but i have to do some researches!
+// . . .
+// . . .
+// . . .
+//I did the researche!
+//its shorthand for: a type of unsigned integer of length 8 bits
+//well , i didn't get why it is used for here
+//anyway...
 uint8_t ledPin = 12;
 uint16_t potAdcValue = 0;
 uint16_t ledBrightValue = 0;
-
+//finally it begins
 void setup() {
+  //my notes 008
+  //setting the speed of serial connection
+  //but i thought it would be on 115000 or sth like that
   Serial.begin(9600);
   delay(10);
-
+  //just for showoff
   Serial.println(F("Adafruit MQTT demo"));
 
   // Connect to WiFi access point.
