@@ -28,7 +28,9 @@
 #include "Adafruit_MQTT_Client.h"
 
 /************************* WiFi Access Point *********************************/
-
+//my notes 003
+//adding a cons var for ssid and password
+//it's because your device (nodemcu) wants' to get the info from Internet
 #define WLAN_SSID       "...your SSID..."
 #define WLAN_PASS       "...your password..."
 
