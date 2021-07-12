@@ -15,6 +15,9 @@
   Written by Tony DiCola for Adafruit Industries.
   MIT license, all text above must be included in any redistribution
  ****************************************************/
+ //my notes 001
+ //it's just a copy from adafruit for researches
+ //the main job of this code is making a connection between  nodemcu and adafruit using mqtt
 #include <ESP8266WiFi.h>
 #include "Adafruit_MQTT.h"
 #include "Adafruit_MQTT_Client.h"
