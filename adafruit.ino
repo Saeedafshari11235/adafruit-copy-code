@@ -35,10 +35,14 @@
 #define WLAN_PASS       "...your password..."
 
 /************************* Adafruit.io Setup *********************************/
-
+//my notes 004
+//this one is for highlighting the site that we wanna be connected with
 #define AIO_SERVER      "io.adafruit.com"
-#define AIO_SERVERPORT  1883                   // use 8883 for SSL
+//i don't know what is it (^_^)
+#define AIO_SERVERPORT  1883// use 8883 for SSL ---->!!!!!!this is not mine!!!!!!
+//user name in adafruit
 #define AIO_USERNAME    "...your AIO username (see https://accounts.adafruit.com)..."
+//the yellow "key" written in your dashboard (middle top)
 #define AIO_KEY         "...your AIO key..."
 
 /************ Global State (you don't need to change this!) ******************/
