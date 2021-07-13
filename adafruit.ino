@@ -31,8 +31,8 @@
 //my notes 003
 //adding a cons var for ssid and password
 //it's because your device (nodemcu) wants' to get the info from Internet
-#define WLAN_SSID       "...your SSID..."
-#define WLAN_PASS       "...your password..."
+#define WLAN_SSID       "Afshari-tcz"
+#define WLAN_PASS       "Saeed@#Hesam"
 
 /************************* Adafruit.io Setup *********************************/
 //my notes 004
@@ -41,9 +41,9 @@
 //i don't know what is it (^_^)
 #define AIO_SERVERPORT  1883// use 8883 for SSL ---->!!!!!!this is not mine!!!!!!
 //user name in adafruit
-#define AIO_USERNAME    "...your AIO username (see https://accounts.adafruit.com)..."
+#define AIO_USERNAME    "Saeedafshari11235"
 //the yellow "key" written in your dashboard (middle top)
-#define AIO_KEY         "...your AIO key..."
+#define AIO_KEY         "aio_kkuw59CCmaeV9sLkLhUvuC6qAsPf"
 
 /************ Global State (you don't need to change this!) ******************/
 //my notes 005
@@ -120,11 +120,13 @@ void loop() {
   // Ensure the connection to the MQTT server is alive (this will make the first
   // connection and automatically reconnect when disconnected).  See the MQTT_connect
   // function definition further below.
+  // my notes 009
+  //asking for mqtt_connect function
   MQTT_connect();
 
   // this is our 'wait for incoming subscription packets' busy subloop
   // try to spend your time here
-
+  //i don't know what is it . i have to search it
   Adafruit_MQTT_Subscribe *subscription;
   while ((subscription = mqtt.readSubscription(200))) {
     if (subscription == &ledBrightness) {
