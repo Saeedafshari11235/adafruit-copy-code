@@ -31,8 +31,8 @@
 //my notes 003
 //adding a cons var for ssid and password
 //it's because your device (nodemcu) wants' to get the info from Internet
-#define WLAN_SSID       "Afshari-tcz"
-#define WLAN_PASS       "Saeed@#Hesam"
+#define WLAN_SSID       "SSID"
+#define WLAN_PASS       "PASSWORD"
 
 /************************* Adafruit.io Setup *********************************/
 //my notes 004
@@ -41,9 +41,9 @@
 //i don't know what is it (^_^)
 #define AIO_SERVERPORT  1883// use 8883 for SSL ---->!!!!!!this is not mine!!!!!!
 //user name in adafruit
-#define AIO_USERNAME    "Saeedafshari11235"
+#define AIO_USERNAME    "USERNAME"
 //the yellow "key" written in your dashboard (middle top)
-#define AIO_KEY         "aio_kkuw59CCmaeV9sLkLhUvuC6qAsPf"
+#define AIO_KEY         "KEY"
 
 /************ Global State (you don't need to change this!) ******************/
 //my notes 005
