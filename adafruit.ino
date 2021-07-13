@@ -99,8 +99,9 @@ void setup() {
   Serial.println(); Serial.println();
   Serial.print("Connecting to ");
   Serial.println(WLAN_SSID);
-
+  //connect to the WIFI
   WiFi.begin(WLAN_SSID, WLAN_PASS);
+  //while wifi is not connected read it again
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
@@ -108,8 +109,9 @@ void setup() {
   Serial.println();
 
   Serial.println("WiFi connected");
+  //write the WIFI ip
   Serial.println("IP address: "); Serial.println(WiFi.localIP());
-
+  // i will explain it later
   // Setup MQTT subscription for ledBrightness feed.
   mqtt.subscribe(&ledBrightness);
 }
