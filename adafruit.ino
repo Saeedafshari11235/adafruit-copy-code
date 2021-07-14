@@ -31,8 +31,8 @@
 //my notes 003
 //adding a cons var for ssid and password
 //it's because your device (nodemcu) wants' to get the info from Internet
-#define WLAN_SSID       "SSID"
-#define WLAN_PASS       "PASSWORD"
+#define WLAN_SSID       "Afshari-tcz"
+#define WLAN_PASS       "Saeed@#Hesam"
 
 /************************* Adafruit.io Setup *********************************/
 //my notes 004
@@ -41,9 +41,9 @@
 //i don't know what is it (^_^)
 #define AIO_SERVERPORT  1883// use 8883 for SSL ---->!!!!!!this is not mine!!!!!!
 //user name in adafruit
-#define AIO_USERNAME    "USERNAME"
+#define AIO_USERNAME    "Saeedafshari11235"
 //the yellow "key" written in your dashboard (middle top)
-#define AIO_KEY         "KEY"
+#define AIO_KEY         "aio_kkuw59CCmaeV9sLkLhUvuC6qAsPf"
 
 /************ Global State (you don't need to change this!) ******************/
 //my notes 005
@@ -127,6 +127,10 @@ void loop() {
   // this is our 'wait for incoming subscription packets' busy subloop
   // try to spend your time here
   //i don't know what is it . i have to search it
+  //...
+  //...
+  //...
+  //i didn't find it
   Adafruit_MQTT_Subscribe *subscription;
   while ((subscription = mqtt.readSubscription(200))) {
     if (subscription == &ledBrightness) {
@@ -144,6 +148,7 @@ void loop() {
     Serial.print(F("Sending pot val "));
     Serial.print(potAdcValue);
     Serial.print("...");
+    delay(2000);
     if (! potValue.publish(potAdcValue)) {
       Serial.println(F("Failed"));
     } else {
