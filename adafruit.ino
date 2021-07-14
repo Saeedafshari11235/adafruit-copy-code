@@ -101,7 +101,7 @@ void setup() {
   Serial.println(WLAN_SSID);
   //connect to the WIFI
   WiFi.begin(WLAN_SSID, WLAN_PASS);
-  //while wifi is not connected read it again
+  //while wifi is not connected so read it again
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
